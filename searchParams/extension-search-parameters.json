@@ -1,0 +1,40 @@
+{
+	"resourceType": "Bundle",
+	"id": "searchParams",
+	"meta": {
+		"lastUpdated": "2020-08-24T22:37:54.724+11:00"
+	},
+	"type": "collection",
+	"entry": [
+		{
+			"fullUrl": "http://ibm.com/fhir/SearchParameter/communication-care-gap-id",
+			"resource": {
+				"resourceType": "SearchParameter",
+				"id": "communication-care-gap-id",
+				"url": "http://ibm.com/fhir/SearchParameter/communication-care-gap-id",
+				"version": "4.0.0",
+				"name": "care-gap-id",
+				"status": "active",
+				"experimental": false,
+				"date": "2020-08-24T22:37:54+11:00",
+				"publisher": "IBM Engagement",
+				"contact": [{
+					"telecom": [{
+						"system": "url",
+						"value": "http://ibm.com/fhir"
+					}]
+				}],
+				"description": "Care gap id for which communication is generated",
+				"code": "care-gap-id",
+				"base": ["Communication"],
+				"type": "string",
+				"xpathUsage": "normal",
+				"xpath": "f:Communication/f:extension[@url='http://ibm.com/fhir/cdm/StructureDefinition/communication-care-gap']/f:valueString",
+				"expression": "Communication.extension.where(url='http://ibm.com/fhir/cdm/StructureDefinition/communication-care-gap').value",
+				"multipleOr": true,
+				"multipleAnd": true,
+				"modifier": []
+			}
+		}
+	]
+}

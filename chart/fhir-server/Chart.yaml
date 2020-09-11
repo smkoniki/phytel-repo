@@ -1,0 +1,7 @@
+apiVersion: v1
+description: fhir server ci cd pipeline
+name: fhir-server
+version: 1.0
+maintainers:
+  - name: 'Kirankumar Boinapally'
+    email: 'kboinapa@in.ibm.com'
